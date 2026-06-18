@@ -7,7 +7,6 @@ struct process
     int wt;
     int tat;
 };
-
 int main()
 {
     struct process p[10];
