@@ -6,11 +6,10 @@ struct process
     int bt;
     int wt;
     int tat;
-};
+}p[10];
 
 int main()
 {
-    struct process p[10];
     int n, i;
     float avg_wt = 0, avg_tat = 0;
 

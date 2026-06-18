@@ -5,11 +5,10 @@ struct student
     int rno;
     char name[10];
     int marks[5];
-};
+}s[3];
 
 int main()
 {
-    struct student s[3];
     int i, j;
     int topper[5];
 
@@ -17,17 +16,17 @@ int main()
     {
         printf("Enter details of student:-\n");
         printf("Enter name: ");
-        scanf("%s", s[i].name);
-        printf("Enter rollno: ");
+        scanf("%s",s[i].name);
+        printf("Enter rollno: \n");
         scanf("%d", &s[i].rno);
-        printf("Enter marks for 5 subjects: ");
+        printf("Enter marks for 5 subjects: \n");
         for (j = 0; j < 5; j++)
         {
             scanf("%d", &s[i].marks[j]);
         }
     }
 
-    printf("-----Marksheet:-----\n");
+    printf("-----Marksheet-----\n");
     printf("RollNo\tName\t\tEnglish\tHindi\tMaths\tScience\tSst\n");
     for (i = 0; i < 3; i++)
     {
